@@ -1,0 +1,146 @@
+@import url('https://fonts.googleapis.com/css2?family=Fredoka+One&family=Montserrat:wght@400;700&display=swap');
+
+body{
+    margin: 0;
+    font-family: 'Montserrat', sans-serif;
+}
+
+header{
+    background-image: url(https://image.freepik.com/vector-gratis/dibujos-animados-lluvia-dinero-patrones-fisuras-notas-papel-verde-moneda-oro-volando-aire_221062-40.jpg);
+    height: 35px;
+}
+
+p{
+    text-align: justify;
+}
+
+.logo{
+    width: 180px;
+    height: 40px;
+}
+
+#links{
+    margin: 10px 40px;
+    height: 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.btn-back{
+    background-color: #518D01;
+    font-family: 'Montserrat', sans-serif;
+    border-radius: 10px;
+    padding: 10px;
+    color: white;
+    border: 0px;
+}
+
+.btn-back:hover{
+    transition:all 0.6s ease;
+    box-shadow: 0px 0px 10px 4px rgba(0, 255, 85, 0.5), 0 0 20px rgba(60, 255, 0, 0.4);
+    text-shadow:0px 0px 20px 5px #00ff88;
+    transform: scale(1.1);
+}
+
+#selectLevels{
+    margin: 0 50px;
+    display: flex;
+    flex-direction: column;
+}
+
+#instructions{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 50px;
+}
+
+#instructions h1, h2, p{
+    margin-top: 0;
+}
+
+#instructions h1, h2{
+    color: #518D01;
+}
+
+#instructions h1{
+    font-size: x-large;
+}
+
+#instructions h2{
+    margin-bottom: 0;
+    font-size: larger;
+}
+
+#instructions p{
+    color: #6B5D5D;
+    font-size: small;
+    margin-bottom: 0;
+}
+
+.instructions{
+    margin-left: 20px;
+}
+
+.atm{
+    width: 100px;
+}
+
+#selectLevels hr{
+    height: 30px;
+    background-color: #518D01;
+    width: 100%;
+}
+
+.hr h3{
+    background-color: #518D01;
+    color: white;
+    text-align: center;
+    margin: 15px 0;
+    padding: 5px 0;
+}
+
+.btnLevels{
+    padding: 15px;
+    min-width: 150px;
+    font-size: 18px;
+    font-weight: 900;
+    color:black;
+    background-color: #F0C41A;
+    border: 0px;
+    font-family: 'Montserrat', sans-serif;
+    margin: 15px 0;
+    width: 100%;
+}
+
+.btnLevels:hover{
+    transition:all 0.6s ease;
+    box-shadow: 0px 0px 10px 4px rgba(255, 195, 0, 0.5), 0 0 20px rgba(255, 195, 0, 0.4);
+    text-shadow:0px 0px 20px 5px #FFC300;
+    transform: scale(1.1);
+}
+
+
+/*Aquí estoy trabajando las medidas responsive */
+
+@media only screen and (min-width: 250px) and (max-width: 500px){
+    #instructions{
+        margin: 0 20px; 
+    }
+
+    #links{
+        margin: 10px; 
+    }
+
+    .btnLevels{
+        font-size: 14px;
+        font-weight: 900;
+        color:black;
+        background-color: #F0C41A;
+        border: 0px;
+        font-family: 'Montserrat', sans-serif;
+        margin-bottom: 15px;
+    }
+
+}
